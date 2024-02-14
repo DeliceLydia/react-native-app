@@ -1,6 +1,7 @@
-import { Text, View, TextInput, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
+import { TextInput} from 'react-native-paper';
 import styles from "./signinStyle";
-import { CheckBox, Icon } from "react-native-elements";
+import { Icon, CheckBox } from "react-native-elements";
 
 const Signin = () => {
   return (
@@ -9,44 +10,25 @@ const Signin = () => {
       <Text style={styles.paragraph}>
         Welcome Back! Please enter your details
       </Text>
-      <View style={styles.inputIcon}>
-      <Icon
-            style={styles.iconStyle}
-            name="mail"
-            type="material"
-            size={20}
-            backgroundColor="#f7d3fe"
-            color="#e456fe"
-            paddingTop={5}
-          />
         <TextInput
           style={styles.input}
-          placeholder="lydia@gmail.com"
-          placeholderTextColor="#000"
+          mode="flat"
+          label="Email"
+          underlineColor="#f7f7f7"
+          left={<TextInput.Icon icon="email-outline" color="#e24bff" backgroundColor= "#f7d3fe"/>}
         />
-      </View>
-
-      <View style={styles.inputIcon}>
-      <Icon
-            style={styles.iconStyle}
-            name="lock"
-            type="font-awesome"
-            size={20}
-            backgroundColor="#e1eafe"
-            color="#7099ff"
-            paddingTop={5}
-          />
         <TextInput
           style={styles.input}
-          placeholder="Password"
-          placeholderTextColor="#000"
+          mode="flat"
+          label="Password"
+          underlineColor="#f7f7f7"
+          left={<TextInput.Icon icon="lock-outline" color="#729bff" backgroundColor= "#e1eafe"/>}
         />
-      </View>
-
-      <View style={styles.checkbox}>
-        <CheckBox style={styles.check} />
-        <Text style={styles.remember}>Remember me</Text>
-      </View>
+   
+   <View style={styles.checkbox}>
+    <CheckBox height= '30' width= '30'/>
+    <Text style={styles.remember}>Remember</Text>
+  </View>
       <Text style={styles.forgot}>Forgot Password?</Text>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Sign In</Text>

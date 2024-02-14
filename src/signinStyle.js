@@ -20,18 +20,20 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   input: {
-    height: 40,
-    width: "80%",
+    height: 60,
+    borderRadius: 15,
+    width: "90%",
     color: "#000",
-    paddingTop: 12,
-    marginBottom: 16,
-    paddingLeft: 15,
+    borderWidth: 0,
+    backgroundColor: '#f7f7f7',
+    marginBottom: 16
   },
   button: {
     backgroundColor: "#159bff",
-    padding: 20,
+    height: 60,
     borderRadius: 40,
-    width: "80%",
+    width: "90%",
+    justifyContent: 'center',
     alignItems: "center",
   },
   buttonText: {
@@ -39,13 +41,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   checkbox: {
-    flexDirection: "row",
-    marginRight: 180,
+    flexDirection: 'row',
+    marginLeft: -230,
     marginBottom: 80,
   },
   remember: {
-    marginTop: 19,
-    marginLeft: -13,
+    marginTop: 17,
+    marginLeft: -12
   },
   forgot: {
     marginBottom: 10,
@@ -90,6 +92,7 @@ const styles = StyleSheet.create({
     paddingLeft: 12,
     backgroundColor: '#f7f7f7'
   }
+
 });
 
 export default styles;
