@@ -1,9 +1,9 @@
 // import Signin from './src/signin.js'
-import Images from './src/images'
+import ViewPage from './src/imageFile'
 
 export default function App() {
   return(
     // < Signin />
-    < Images />
+    < ViewPage />
   )
 }
