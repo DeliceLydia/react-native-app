@@ -3,9 +3,8 @@ import { StyleSheet} from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 70,
     alignItems: "center",
-    padding: 16,
+    backgroundColor: '#f3f4f6',
   },
   title: {
     fontSize: 24,
@@ -20,19 +19,19 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   input: {
-    height: 60,
-    borderRadius: 15,
+    height: 50,
+    borderRadius: 20,
     width: "90%",
     color: "#000",
     borderWidth: 0,
-    backgroundColor: '#f7f7f7',
-    marginBottom: 16
+    backgroundColor: '#fcfefd',
+    marginBottom: 12
   },
   button: {
-    backgroundColor: "#159bff",
-    height: 60,
+    backgroundColor: '#1a1c33',
+    height: 40,
     borderRadius: 40,
-    width: "90%",
+    width: "30%",
     justifyContent: 'center',
     alignItems: "center",
   },
@@ -50,9 +49,18 @@ const styles = StyleSheet.create({
     marginLeft: -12
   },
   forgot: {
-    marginBottom: 10,
-    fontWeight: "bold",
-    color: "#40A2E3",
+    marginTop: 12,
+    color: "#b1aff6",
+  },
+  image: {
+    width: 30,
+    height: 30,
+    marginTop: 15,
+  },
+  flexButton: {
+    flexDirection: 'row',
+    gap: 120,
+    marginTop: 20
   },
   signup: {
     marginTop: 15,
@@ -77,6 +85,14 @@ const styles = StyleSheet.create({
     marginTop: 40,
     flexDirection: 'row',
     gap: 80,  
+  },
+  bg: {
+    backgroundColor: '#fcfcfc',
+    width: 60,
+    height: 60,
+    paddingLeft: 15,
+    paddingTop: 2,
+    borderRadius: 60
   },
   iconStyle: {
     width: 30,

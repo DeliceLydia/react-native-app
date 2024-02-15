@@ -1,9 +1,13 @@
-// import Signin from './src/signin.js'
-import ViewPage from './src/imageFile'
 
-export default function App() {
+// import RegisterScreen from './src/register'
+import Signin from './src/signin';
+
+
+const App = () => {
   return(
-    // < Signin />
-    < ViewPage />
+  //  <RegisterScreen />
+  <Signin />
   )
 }
+
+export default App;
