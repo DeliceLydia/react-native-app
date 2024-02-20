@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 16,
+    marginTop: 5,
     textAlign: "center",
   },
   paragraph: {
@@ -44,6 +45,9 @@ const styles = StyleSheet.create({
     marginLeft: -230,
     marginBottom: 80,
   },
+  logoImg: {
+    height: "40%"
+  },
   remember: {
     marginTop: 17,
     marginLeft: -12
@@ -56,6 +60,12 @@ const styles = StyleSheet.create({
     width: 30,
     height: 30,
     marginTop: 15,
+  },
+  link: {
+    flexDirection: 'row',
+    gap: 8,
+    marginTop: 20,
+    marginBottom: 10
   },
   flexButton: {
     flexDirection: 'row',

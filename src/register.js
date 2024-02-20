@@ -3,7 +3,7 @@ import styles from "./registerStyle";
 import { TextInput } from "react-native-paper";
 import { Icon } from "react-native-elements";
 
-const RegisterScreen = () => {
+const RegisterScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Image
@@ -55,9 +55,9 @@ const RegisterScreen = () => {
         }
       />
       <View style={styles.link}>
-        <Text >Have an account?</Text>
-        <TouchableOpacity>
-          <Text style={{ color: "#a3dfbf" }}>Sign in</Text>
+        <Text>Have an account?</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("signin")}>
+          <Text style={{ color: "#08684a" }}>Sign in</Text>
         </TouchableOpacity>
       </View>
 

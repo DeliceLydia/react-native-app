@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 24,
-    marginTop: -15,
+    marginTop: -30,
     fontWeight: 'bold',
     marginBottom: 20,
   },
@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
   link: {
     flexDirection: 'row',
     gap: 8,
-    marginTop: 10
+    marginTop: 15,
+    marginBottom: 15
   },
   bg: {
     backgroundColor: '#fcfcfc',
